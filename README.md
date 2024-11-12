@@ -23,7 +23,7 @@ Guardar los datos recopilados en una base de datos centralizada
 **Proceso**
 1. Iniciar Web Scraping -> 2. Extraer Datos de los competidores -> 3. Guardas los Datos.
 
-##Ejercicio 2
+## Ejercicio 2
 Paralelismo dinámico con CUDA
 
 a) Realiza una breve investigación y proporciona un ejemplo sencillo utilizando CUDA-C. El ejemplo debe ser ejectuable en Google Colab (https://colab.research.google.com). Asegúrate de incluir caputras de pantalla que demuestren la ejecución del código.
@@ -32,7 +32,7 @@ b) Desarrolla un programa utilizando paralelismo dinámico en CUDA que lea una i
 
 c) Realiza un vídeo relacionado al ejercicio anterior donde expliques el código que utilizaste y las imágenes de entrada y salida que obtuviste.
 
-##Ejercicio 3
+## Ejercicio 3
 
 a) Configura Google Colab para ejecutar un ejemplo sencillo de openMP donde se despliegue el uso de 8 hilos. Asegúrate de incluir capturas de pantalla que demuestren la ejecución del código.
 
