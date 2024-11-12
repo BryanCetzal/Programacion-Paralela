@@ -6,14 +6,25 @@ CUDA son las siglas de Comput Unified Device Architecture in C, es una plataform
 
 ## Ejemplo de suma de dos vectores utilizando CUDA-C
 
+### 1. Función que se ejecuta en la GPU
 ```cpp
-#include <iostream>
-using namespace std;
-
-__global__ void vectorAdd(int *A, int *B, int *C, int N) {
-    int index = threadIdx.x + blockIdx.x * blockDim.x;
-    if (index < N) C[index] = A[index] + B[index];
+__global__ void addKernel(int *c, const int *a, const int *b)
+{
+    int i = blockDim.x * blockIdx.x + threadIdx.x;
+    c[i] = a[i] + b[i];
 }
+
 ```
-* __global__ nos indica que la función vectorAdd es un _kernel_, que se ejecutará en la GPU. Los hilos de la GPU calcularán la suma de los elementos de los vectores A y B.
-* index: calcula el índice del hilo actual para aasegurar que cada hilo procese una posición diferente de los vectores.
+Es una función llamda addKernel. Se va a ejecutar en la GPU. Toma dos listas de números (a y b), las suma elemento por elemento y guarda el resultado en una tercera lista (c).
+
+### 2. Función principal
+
+```cpp
+int main()
+{
+    const int N = 10;
+    int a[N], b[N], c[N];
+
+```
+En esta función se definen 3 arrgelos de 10 números: a, b y c. a y b son los arreglos que queremos sumar y c es donde se guardarán los datos.
+
