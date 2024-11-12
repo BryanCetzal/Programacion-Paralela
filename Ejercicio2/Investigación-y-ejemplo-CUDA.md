@@ -15,3 +15,5 @@ __global__ void vectorAdd(int *A, int *B, int *C, int N) {
     if (index < N) C[index] = A[index] + B[index];
 }
 ```
+* __global__ nos indica que la función vectorAdd es un _kernel_, que se ejecutará en la GPU. Los hilos de la GPU calcularán la suma de los elementos de los vectores A y B.
+* index: calcula el índice del hilo actual para aasegurar que cada hilo procese una posición diferente de los vectores.
