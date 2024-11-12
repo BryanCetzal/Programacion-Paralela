@@ -60,7 +60,48 @@ cudaMemcpy(d_b, b, N * sizeof(int), cudaMemcpyHostToDevice);
 
 ```
 
-* cudaMemcpy() copia los datos de la memoria de la CPU a la memoria de la GPU.
-* cudaMemcpyHostToDevice es la dirección de la copia, indicando que es de CPU a GPU.
+* Aquí se copian los datos de las lsitas a y b desde la memoria de la computadora a la memoria de la GPU.
 
+### 6. Ejecutar la función en la GPU
 
+```cpp
+
+int blockSize = 256;
+int gridSize = (N + blockSize - 1) / blockSize;
+addKernel<<<gridSize, blockSize>>>(d_c, d_a, d_b);
+
+```
+* Este paso le envía a la GPU y le dice cuántos hilos usar.
+
+### 7. Copiar los resultados de la GPU a la computadora.
+
+```cpp
+
+cudaMemcpy(c, d_c, N * sizeof(int), cudaMemcpyDeviceToHost);
+
+```
+* Aquí se copian los resultados de la lista c de la GPU de regreso a la computadora para poder verlos.
+
+### 8. Mostrar los resultados en la pantalla
+
+```cpp
+
+for (int i = 0; i < N; i++) {
+    printf("%d + %d = %d\n", a[i], b[i], c[i]);
+}
+
+```
+* Se imprimen las sumas de cada par de elementos de a y b y se muestran los resultados.
+
+### 9. Liberación de la memoria en la GPU
+
+```cpp
+
+cudaFree(d_a);
+cudaFree(d_b);
+cudaFree(d_c);
+
+```
+* Esto libera la memoria asignada en la GPU para evitar fugas de memoria.
+
+Puedes ver el código y la ejecución de este en Google colab dando click [aquí](https://colab.research.google.com/drive/1YQv1vvQp6yAOtxKqsQA1pN8bgRFy9Da1?usp=sharing)
