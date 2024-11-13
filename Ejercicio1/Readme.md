@@ -3,7 +3,7 @@ Este proyecto es un scraper para el sitio Books to Scrape, que permite extraer i
 
 Para la realización de este ejercicio, se opto por usar **Scrapy** un framework que nos permite realizar el scraping de manera sencilla y nos permite configurar la paralelización desde sus archivos.
 
-### **1. Instalación del framework y de la bd**
+### **1. Instalación del framework**
 ```bash
 pip install scrapy
 ```
