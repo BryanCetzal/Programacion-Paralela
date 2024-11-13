@@ -181,4 +181,4 @@ Para visualizar la base de datos generada, se puede instalar el siguiente [DB Br
 Ejemplo:   
 ![](img/DBLLena.jpg)
 
-Video Explicando el funcionamiento: [Scraper](youtube.com)
+Video Explicando el funcionamiento: [Scraper](https://youtu.be/t-bGUxbaFX4)
