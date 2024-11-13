@@ -177,8 +177,8 @@ scrapy crawl <nombre_del_spider>
 ```
 
 ### **8. Visualización de los datos obtenidos**
-Para visualizar la base de datos generada, se puede instalar el siguiente [DB Browser para SQLite](https://download.sqlitebrowser.org/DB.Browser.for.SQLite-v3.13.1-win64.msi) para Windows.
-Ejemplo: 
-![](img/DBLlena.jpg)
+Para visualizar la base de datos generada, se puede instalar el siguiente [DB Browser para SQLite](https://download.sqlitebrowser.org/DB.Browser.for.SQLite-v3.13.1-win64.msi) para Windows.  
+Ejemplo:   
+![](img/DBLLena.jpg)
 
 Video Explicando el funcionamiento: [Scraper](youtube.com)
