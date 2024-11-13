@@ -28,7 +28,7 @@ Paralelismo dinámico con CUDA
 
 a) Realiza una breve investigación y proporciona un ejemplo sencillo utilizando CUDA-C. El ejemplo debe ser ejectuable en Google Colab (https://colab.research.google.com). Asegúrate de incluir caputras de pantalla que demuestren la ejecución del código.
 
-b) Desarrolla un programa utilizando paralelismo dinámico en CUDA que lea una imagen de 512 x 512 píxeles y la divida en 4 subimágenes. Cada subimagen, a su vez, se subdividirá en 4 subimágenes adicionales, generando un árbol cuaternario. Este proceso continuará recursivaemente hasta que cada hilo se encargue de una subimagen de 2 x 2 píxeles o hasta que se alcance el límite del sistema. El hilo calculará el promedio de los 4 póxeles y asignará ese valor a cada uno de ellos.
+b) Desarrolla un programa utilizando paralelismo dinámico en CUDA que lea una imagen de 512 x 512 píxeles y la divida en 4 subimágenes. Cada subimagen, a su vez, se subdividirá en 4 subimágenes adicionales, generando un árbol cuaternario. Este proceso continuará recursivaemente hasta que cada hilo se encargue de una subimagen de 2 x 2 píxeles o hasta que se alcance el límite del sistema. El hilo calculará el promedio de los 4 píxeles y asignará ese valor a cada uno de ellos.
 
 c) Realiza un vídeo relacionado al ejercicio anterior donde expliques el código que utilizaste y las imágenes de entrada y salida que obtuviste.
 
