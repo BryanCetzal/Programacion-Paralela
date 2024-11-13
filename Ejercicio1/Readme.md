@@ -61,7 +61,7 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 ### **5. Configuración de pipelines** 
 Este archivo `pipelines.py` define una clase SQLitePipeline que se utiliza para procesar y almacenar los datos extraídos por el scraper en una base de datos SQLite
-```
+```python
 import sqlite3
 from concurrent.futures import ThreadPoolExecutor
 
