@@ -105,3 +105,6 @@ cudaFree(d_c);
 * Esto libera la memoria asignada en la GPU para evitar fugas de memoria.
 
 Puedes ver el código y la ejecución de este en Google colab dando click [aquí](https://colab.research.google.com/drive/1YQv1vvQp6yAOtxKqsQA1pN8bgRFy9Da1?usp=sharing)
+
+[Link para el vídeo](https://docs.google.com/document/d/1-rcTprP6RDRfRmnvjrjGZBt1yFmF2PHv95LAZeQ7C6U/edit?usp=sharing)
+
